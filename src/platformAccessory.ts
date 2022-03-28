@@ -61,8 +61,8 @@ export class MotionBlindsAccessory {
         .getCharacteristic(this.platform.Characteristic.TargetPosition)
         .on('get', (callback) => callback(null, this.accessory.context.targetPosition))
         .on('set', (value, callback) => {
-          let targetPosition = value as number
-          let effectiveTarget = this.config.invert ? 100 - targetPosition : targetPosition
+          const targetPosition = value as number
+          const effectiveTarget = this.config.invert ? 100 - targetPosition : targetPosition
           this.accessory.context.targetPosition = targetPosition
           this.platform.gateway
             .writeDevice(this.mac, this.deviceType, { targetPosition: effectiveTarget })
