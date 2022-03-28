@@ -1,4 +1,4 @@
-# homebridge-motionblinds
+# homebridge-motionblinds-nn
 
 [![npm](https://badgen.net/npm/v/homebridge-motionblinds)](https://www.npmjs.com/package/homebridge-motionblinds)
 [![npm](https://badgen.net/npm/dt/homebridge-motionblinds)](https://www.npmjs.com/package/homebridge-motionblinds)
